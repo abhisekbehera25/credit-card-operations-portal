@@ -166,6 +166,6 @@ This project is cloud-ready and scalable for production use.
 Abhisek Behera
 Java Full Stack Developer | Spring Boot Microservices | AWS | Docker | React
 
-🔗 GitHub: https://github.com/your-username
+🔗 GitHub: https://github.com/abhisekbehera25
 
-🔗 LinkedIn: https://linkedin.com/in/your-profile
+🔗 LinkedIn: https://www.linkedin.com/in/abhisekbehera225/
