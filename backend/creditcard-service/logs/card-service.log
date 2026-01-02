@@ -1,0 +1,739 @@
+2025-12-24 09:39:18 [restartedMain] INFO  c.c.c.CreditcardServiceApplication - Starting CreditcardServiceApplication using Java 17.0.17 with PID 27252 (C:\Users\abehera042\Project_Works\credit-card-portal\backend\creditcard-service\target\classes started by abehera042 in C:\Users\abehera042\Project_Works\credit-card-portal\backend\creditcard-service)
+2025-12-24 09:39:18 [restartedMain] INFO  c.c.c.CreditcardServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 09:39:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 09:39:18 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 09:39:22 [restartedMain] DEBUG o.s.c.o.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\abehera042\Project_Works\credit-card-portal\backend\creditcard-service\target\classes\com\creditcard\creditcard_service\feign\CustomerServiceClient.class]
+2025-12-24 09:39:23 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 09:39:24 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 439 ms. Found 1 JPA repository interface.
+2025-12-24 09:39:25 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=913eaa6f-7e2d-3fac-ab1c-4e430c17457e
+2025-12-24 09:39:27 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8082 (http)
+2025-12-24 09:39:27 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 09:39:27 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 09:39:28 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 09:39:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 9339 ms
+2025-12-24 09:39:29 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 09:39:29 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 09:39:29 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 09:39:30 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 09:39:30 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - CardServiceHikariCP - Starting...
+2025-12-24 09:39:31 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - CardServiceHikariCP - Added connection org.postgresql.jdbc.PgConnection@3a011779
+2025-12-24 09:39:31 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - CardServiceHikariCP - Start completed.
+2025-12-24 09:39:31 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 09:39:32 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (CardServiceHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 17.7
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 09:39:34 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 09:39:34 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 09:39:36 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 09:39:37 [restartedMain] DEBUG o.s.c.o.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2025-12-24 09:39:38 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-24 09:39:46 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-12-24 09:39:46 [restartedMain] INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration - Eureka HTTP Client uses RestTemplate.
+2025-12-24 09:39:47 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-12-24 09:39:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-24 09:39:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8082 (http) with context path '/'
+2025-12-24 09:39:48 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-12-24 09:39:48 [restartedMain] INFO  c.c.c.CreditcardServiceApplication - Started CreditcardServiceApplication in 33.273 seconds (process running for 43.337)
+2025-12-24 09:39:49 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 09:39:49 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 09:39:49 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2025-12-24 09:51:21 [http-nio-8082-exec-1] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:51:21 [http-nio-8082-exec-1] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:51:21 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:51:22 [http-nio-8082-exec-2] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:51:22 [http-nio-8082-exec-2] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:51:22 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:52:23 [http-nio-8082-exec-4] INFO  c.c.c.controller.CardController - REST request to get all cards - page: 0, size: 10
+2025-12-24 09:52:23 [http-nio-8082-exec-4] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards with pagination
+2025-12-24 09:52:24 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    order by
+        c1_0.id desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:25 [http-nio-8082-exec-4] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-12-24 09:52:25 [http-nio-8082-exec-5] INFO  c.c.c.controller.CardController - REST request to get all cards - page: 0, size: 10
+2025-12-24 09:52:25 [http-nio-8082-exec-5] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards with pagination
+2025-12-24 09:52:25 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    order by
+        c1_0.id desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:31 [http-nio-8082-exec-6] INFO  c.c.c.controller.CardController - REST request to get all cards - page: 0, size: 10
+2025-12-24 09:52:31 [http-nio-8082-exec-6] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards with pagination
+2025-12-24 09:52:31 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    order by
+        c1_0.id desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:31 [http-nio-8082-exec-7] INFO  c.c.c.controller.CardController - REST request to get all cards - page: 0, size: 10
+2025-12-24 09:52:31 [http-nio-8082-exec-7] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards with pagination
+2025-12-24 09:52:31 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    order by
+        c1_0.id desc 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:39 [http-nio-8082-exec-8] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:52:39 [http-nio-8082-exec-8] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:52:39 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:52:39 [http-nio-8082-exec-9] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:52:39 [http-nio-8082-exec-9] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:52:39 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:21 [http-nio-8082-exec-10] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:53:21 [http-nio-8082-exec-10] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:53:21 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:21 [http-nio-8082-exec-1] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:53:21 [http-nio-8082-exec-1] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:53:21 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:30 [http-nio-8082-exec-2] INFO  c.c.c.controller.CardController - REST request to issue card for customer: 3
+2025-12-24 09:53:30 [http-nio-8082-exec-2] INFO  c.c.c.service.impl.CardServiceImpl - Issuing card for customer ID: 3
+2025-12-24 09:53:30 [http-nio-8082-exec-2] ERROR c.c.c.service.impl.CardServiceImpl - Customer not found with ID: 3
+2025-12-24 09:53:30 [http-nio-8082-exec-2] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:53:30 [http-nio-8082-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.creditcard_service.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:53:33 [http-nio-8082-exec-3] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:53:33 [http-nio-8082-exec-3] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:53:33 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:33 [http-nio-8082-exec-4] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 09:53:33 [http-nio-8082-exec-4] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 09:53:33 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:53 [http-nio-8082-exec-5] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 09:53:53 [http-nio-8082-exec-5] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 09:53:53 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 09:53:53 [http-nio-8082-exec-6] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 09:53:53 [http-nio-8082-exec-6] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 09:53:53 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:01:11 [http-nio-8082-exec-9] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 10:01:11 [http-nio-8082-exec-9] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 10:01:11 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:01:11 [http-nio-8082-exec-10] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 3
+2025-12-24 10:01:11 [http-nio-8082-exec-10] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 3
+2025-12-24 10:01:11 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:01:43 [http-nio-8082-exec-1] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:01:43 [http-nio-8082-exec-1] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:01:43 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:01:43 [http-nio-8082-exec-2] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:01:43 [http-nio-8082-exec-2] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:01:43 [http-nio-8082-exec-2] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:07 [http-nio-8082-exec-3] INFO  c.c.c.controller.CardController - REST request to issue card for customer: 1
+2025-12-24 10:02:07 [http-nio-8082-exec-3] INFO  c.c.c.service.impl.CardServiceImpl - Issuing card for customer ID: 1
+2025-12-24 10:02:07 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id 
+    from
+        cards c1_0 
+    where
+        c1_0.card_number=? 
+    fetch
+        first ? rows only
+2025-12-24 10:02:07 [http-nio-8082-exec-3] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.creditcard.creditcard_service.entity.Card */insert 
+    into
+        cards (activation_date, available_credit, card_holder_name, card_number, card_type, created_at, credit_limit, customer_id, cvv, daily_limit, expiry_date, issue_date, last_used_date, status, updated_at) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-24 10:02:08 [http-nio-8082-exec-3] INFO  c.c.c.service.impl.CardServiceImpl - Card issued successfully with ID: 4
+2025-12-24 10:02:10 [http-nio-8082-exec-4] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:10 [http-nio-8082-exec-4] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:10 [http-nio-8082-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:10 [http-nio-8082-exec-5] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:10 [http-nio-8082-exec-5] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:11 [http-nio-8082-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:29 [http-nio-8082-exec-6] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:29 [http-nio-8082-exec-6] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:29 [http-nio-8082-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:30 [http-nio-8082-exec-7] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:30 [http-nio-8082-exec-7] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:30 [http-nio-8082-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:43 [http-nio-8082-exec-8] INFO  c.c.c.controller.CardController - REST request to activate card: 4
+2025-12-24 10:02:43 [http-nio-8082-exec-8] INFO  c.c.c.service.impl.CardServiceImpl - Activating card with ID: 4
+2025-12-24 10:02:43 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.id=?
+2025-12-24 10:02:43 [http-nio-8082-exec-8] INFO  c.c.c.service.impl.CardServiceImpl - Card activated successfully
+2025-12-24 10:02:44 [http-nio-8082-exec-8] DEBUG org.hibernate.SQL - 
+    /* update
+        for com.creditcard.creditcard_service.entity.Card */update cards 
+    set
+        activation_date=?,
+        available_credit=?,
+        card_holder_name=?,
+        card_number=?,
+        card_type=?,
+        credit_limit=?,
+        customer_id=?,
+        cvv=?,
+        daily_limit=?,
+        expiry_date=?,
+        issue_date=?,
+        last_used_date=?,
+        status=?,
+        updated_at=? 
+    where
+        id=?
+2025-12-24 10:02:44 [http-nio-8082-exec-9] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:44 [http-nio-8082-exec-9] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:44 [http-nio-8082-exec-9] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:47 [http-nio-8082-exec-10] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:47 [http-nio-8082-exec-10] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:47 [http-nio-8082-exec-10] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:02:49 [http-nio-8082-exec-1] INFO  c.c.c.controller.CardController - REST request to get cards for customer: 1
+2025-12-24 10:02:49 [http-nio-8082-exec-1] INFO  c.c.c.service.impl.CardServiceImpl - Fetching all cards for customer ID: 1
+2025-12-24 10:02:49 [http-nio-8082-exec-1] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.activation_date,
+        c1_0.available_credit,
+        c1_0.card_holder_name,
+        c1_0.card_number,
+        c1_0.card_type,
+        c1_0.created_at,
+        c1_0.credit_limit,
+        c1_0.customer_id,
+        c1_0.cvv,
+        c1_0.daily_limit,
+        c1_0.expiry_date,
+        c1_0.issue_date,
+        c1_0.last_used_date,
+        c1_0.status,
+        c1_0.updated_at 
+    from
+        cards c1_0 
+    where
+        c1_0.customer_id=?
+2025-12-24 10:17:14 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-24 10:17:14 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 10:17:17 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 10:17:17 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:17:17 [RMI TCP Connection(42)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - CardServiceHikariCP - Shutdown initiated...
+2025-12-24 10:17:17 [RMI TCP Connection(42)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - CardServiceHikariCP - Shutdown completed.

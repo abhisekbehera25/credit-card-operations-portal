@@ -1,0 +1,424 @@
+2025-12-24 09:40:38.167 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-12-24 09:40:38.325 [restartedMain] INFO  c.c.c.CustomerServiceApplication - Starting CustomerServiceApplication using Java 17.0.17 with PID 18364 (C:\Users\abehera042\Project_Works\credit-card-portal\backend\customer-service\target\classes started by abehera042 in C:\Users\abehera042\Project_Works\credit-card-portal\backend\customer-service)
+2025-12-24 09:40:38.326 [restartedMain] DEBUG c.c.c.CustomerServiceApplication - Running with Spring Boot v3.4.12, Spring v6.2.14
+2025-12-24 09:40:38.328 [restartedMain] INFO  c.c.c.CustomerServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2025-12-24 09:40:38.429 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-24 09:40:38.430 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-24 09:40:40.130 [restartedMain] INFO  o.s.c.i.s.PropertySourceProcessor - Properties location [classpath:application-${spring.profiles.active}.properties] not resolvable: Could not resolve placeholder 'spring.profiles.active' in value "classpath:application-${spring.profiles.active}.properties"
+2025-12-24 09:40:41.414 [restartedMain] DEBUG o.s.c.o.FeignClientsRegistrar$1 - Identified candidate component class: file [C:\Users\abehera042\Project_Works\credit-card-portal\backend\customer-service\target\classes\com\creditcard\customer\feign\CardServiceClient.class]
+2025-12-24 09:40:42.383 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-24 09:40:42.499 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 99 ms. Found 1 JPA repository interface.
+2025-12-24 09:40:43.020 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=5768698d-c3ad-35ce-a4f9-52671ec2d9bc
+2025-12-24 09:40:44.549 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-24 09:40:44.572 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+2025-12-24 09:40:44.577 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-24 09:40:44.578 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.49]
+2025-12-24 09:40:44.716 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-12-24 09:40:44.718 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 6286 ms
+2025-12-24 09:40:45.498 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - CustomerServiceHikariCP - Starting...
+2025-12-24 09:40:46.744 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - CustomerServiceHikariCP - Added connection org.postgresql.jdbc.PgConnection@36d8efce
+2025-12-24 09:40:46.748 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - CustomerServiceHikariCP - Start completed.
+2025-12-24 09:40:47.035 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-24 09:40:47.221 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.36.Final
+2025-12-24 09:40:47.305 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-24 09:40:47.954 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-24 09:40:48.133 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-24 09:40:48.185 [restartedMain] INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (CustomerServiceHikariCP)']
+	Database driver: undefined/unknown
+	Database version: 17.7
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-12-24 09:40:50.376 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-24 09:40:50.675 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 09:40:51.511 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-12-24 09:40:53.010 [restartedMain] DEBUG o.s.c.o.FeignClientFactoryBean - Creating a FeignClientFactoryBean.
+2025-12-24 09:40:54.876 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 3 endpoints beneath base path '/actuator'
+2025-12-24 09:40:57.178 [restartedMain] WARN  o.s.b.d.a.OptionalLiveReloadServer - Unable to start LiveReload server
+2025-12-24 09:40:58.544 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-12-24 09:40:58.788 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+2025-12-24 09:40:58.832 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/'
+2025-12-24 09:41:00.079 [restartedMain] INFO  o.s.cloud.commons.util.InetUtils - Cannot determine local hostname
+2025-12-24 09:41:00.114 [restartedMain] INFO  c.c.c.CustomerServiceApplication - Started CustomerServiceApplication in 24.245 seconds (process running for 25.952)
+2025-12-24 09:41:00.505 [RMI TCP Connection(4)-127.0.0.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-24 09:41:00.506 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-24 09:41:00.510 [RMI TCP Connection(4)-127.0.0.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-12-24 09:51:30.539 [http-nio-8081-exec-2] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:51:30.601 [http-nio-8081-exec-2] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:51:31.006 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:51:31.442 [http-nio-8081-exec-2] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:51:31.487 [http-nio-8081-exec-2] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:51:33.605 [http-nio-8081-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:51:33.806 [http-nio-8081-exec-3] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:51:33.811 [http-nio-8081-exec-3] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:51:33.821 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:51:33.827 [http-nio-8081-exec-3] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:51:33.838 [http-nio-8081-exec-3] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:51:33.861 [http-nio-8081-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:51:48.301 [http-nio-8081-exec-1] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:51:48.301 [http-nio-8081-exec-1] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:51:48.306 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:51:48.309 [http-nio-8081-exec-1] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:51:48.314 [http-nio-8081-exec-1] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:51:48.317 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:51:48.977 [http-nio-8081-exec-4] INFO  c.c.c.controller.CustomerController - REST request to create customer: a@gmail.com
+2025-12-24 09:51:49.082 [http-nio-8081-exec-4] INFO  c.c.c.s.impl.CustomerServiceImpl - Creating customer with email: a@gmail.com
+2025-12-24 09:51:49.331 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+2025-12-24 09:51:49.383 [http-nio-8081-exec-4] ERROR c.c.c.e.GlobalExceptionHandler - Invalid customer data: Customer must be at least 18 years old
+2025-12-24 09:51:49.401 [http-nio-8081-exec-4] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.InvalidCustomerDataException: Customer must be at least 18 years old]
+2025-12-24 09:52:23.577 [http-nio-8081-exec-5] INFO  c.c.c.controller.CustomerController - REST request to get all customers - page: 0, size: 10
+2025-12-24 09:52:23.615 [http-nio-8081-exec-5] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching all customers - Page: 0, Size: 10
+2025-12-24 09:52:23.709 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    order by
+        c1_0.id 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:24.534 [http-nio-8081-exec-5] WARN  o.s.d.w.c.SpringDataJacksonConfiguration$PageModule$WarningLoggingModifier - Serializing PageImpl instances as-is is not supported, meaning that there is no guarantee about the stability of the resulting JSON structure!
+	For a stable JSON structure, please use Spring Data's PagedModel (globally via @EnableSpringDataWebSupport(pageSerializationMode = VIA_DTO))
+	or Spring HATEOAS and Spring Data's PagedResourcesAssembler as documented in https://docs.spring.io/spring-data/commons/reference/repositories/core-extensions.html#core.web.pageables.
+
+2025-12-24 09:52:24.939 [http-nio-8081-exec-6] INFO  c.c.c.controller.CustomerController - REST request to get all customers - page: 0, size: 10
+2025-12-24 09:52:24.941 [http-nio-8081-exec-6] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching all customers - Page: 0, Size: 10
+2025-12-24 09:52:24.975 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    order by
+        c1_0.id 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:31.200 [http-nio-8081-exec-7] INFO  c.c.c.controller.CustomerController - REST request to get all customers - page: 0, size: 10
+2025-12-24 09:52:31.213 [http-nio-8081-exec-7] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching all customers - Page: 0, Size: 10
+2025-12-24 09:52:31.225 [http-nio-8081-exec-7] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    order by
+        c1_0.id 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:31.295 [http-nio-8081-exec-8] INFO  c.c.c.controller.CustomerController - REST request to get all customers - page: 0, size: 10
+2025-12-24 09:52:31.297 [http-nio-8081-exec-8] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching all customers - Page: 0, Size: 10
+2025-12-24 09:52:31.307 [http-nio-8081-exec-8] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    order by
+        c1_0.id 
+    offset
+        ? rows 
+    fetch
+        first ? rows only
+2025-12-24 09:52:43.934 [http-nio-8081-exec-9] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:52:43.949 [http-nio-8081-exec-9] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:52:43.952 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:52:43.957 [http-nio-8081-exec-9] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:52:43.963 [http-nio-8081-exec-9] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:52:43.969 [http-nio-8081-exec-9] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:52:44.081 [http-nio-8081-exec-10] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:52:44.081 [http-nio-8081-exec-10] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:52:44.087 [http-nio-8081-exec-10] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:52:44.097 [http-nio-8081-exec-10] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:52:44.107 [http-nio-8081-exec-10] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:52:44.114 [http-nio-8081-exec-10] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:53:05.683 [http-nio-8081-exec-2] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:53:05.685 [http-nio-8081-exec-2] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:53:05.689 [http-nio-8081-exec-2] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:53:05.695 [http-nio-8081-exec-2] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:53:05.698 [http-nio-8081-exec-2] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:53:05.703 [http-nio-8081-exec-2] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:53:05.790 [http-nio-8081-exec-3] INFO  c.c.c.controller.CustomerController - REST request to create customer: a@gmail.com
+2025-12-24 09:53:05.792 [http-nio-8081-exec-3] INFO  c.c.c.s.impl.CustomerServiceImpl - Creating customer with email: a@gmail.com
+2025-12-24 09:53:05.801 [http-nio-8081-exec-3] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+2025-12-24 09:53:05.814 [http-nio-8081-exec-3] ERROR c.c.c.e.GlobalExceptionHandler - Invalid customer data: Customer must be at least 18 years old
+2025-12-24 09:53:05.822 [http-nio-8081-exec-3] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.InvalidCustomerDataException: Customer must be at least 18 years old]
+2025-12-24 09:53:18.926 [http-nio-8081-exec-1] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:53:18.930 [http-nio-8081-exec-1] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:53:18.933 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:53:18.936 [http-nio-8081-exec-1] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:53:18.939 [http-nio-8081-exec-1] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:53:18.944 [http-nio-8081-exec-1] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:53:19.031 [http-nio-8081-exec-4] INFO  c.c.c.controller.CustomerController - REST request to create customer: a@gmail.com
+2025-12-24 09:53:19.033 [http-nio-8081-exec-4] INFO  c.c.c.s.impl.CustomerServiceImpl - Creating customer with email: a@gmail.com
+2025-12-24 09:53:19.040 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - 
+    /* <criteria> */ select
+        c1_0.id 
+    from
+        customers c1_0 
+    where
+        c1_0.email=? 
+    fetch
+        first ? rows only
+2025-12-24 09:53:19.232 [http-nio-8081-exec-4] DEBUG org.hibernate.SQL - 
+    /* insert for
+        com.creditcard.customer.entity.Customer */insert 
+    into
+        customers (address, city, created_at, date_of_birth, email, first_name, last_name, phone, state, status, updated_at, zip_code) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-12-24 09:53:19.385 [http-nio-8081-exec-4] INFO  c.c.c.s.impl.CustomerServiceImpl - Customer created successfully with ID: 2
+2025-12-24 09:53:19.570 [http-nio-8081-exec-5] INFO  c.c.c.controller.CustomerController - REST request to get customer: 3
+2025-12-24 09:53:19.577 [http-nio-8081-exec-5] INFO  c.c.c.s.impl.CustomerServiceImpl - Fetching customer with ID: 3
+2025-12-24 09:53:19.580 [http-nio-8081-exec-5] DEBUG org.hibernate.SQL - 
+    select
+        c1_0.id,
+        c1_0.address,
+        c1_0.city,
+        c1_0.created_at,
+        c1_0.date_of_birth,
+        c1_0.email,
+        c1_0.first_name,
+        c1_0.last_name,
+        c1_0.phone,
+        c1_0.state,
+        c1_0.status,
+        c1_0.updated_at,
+        c1_0.zip_code 
+    from
+        customers c1_0 
+    where
+        c1_0.id=?
+2025-12-24 09:53:19.586 [http-nio-8081-exec-5] ERROR c.c.c.s.impl.CustomerServiceImpl - Customer not found with ID: 3
+2025-12-24 09:53:19.591 [http-nio-8081-exec-5] ERROR c.c.c.e.GlobalExceptionHandler - Customer not found: Customer not found with ID: 3
+2025-12-24 09:53:19.600 [http-nio-8081-exec-5] WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.creditcard.customer.exception.CustomerNotFoundException: Customer not found with ID: 3]
+2025-12-24 09:53:30.205 [http-nio-8081-exec-6] INFO  c.c.c.controller.CustomerController - REST request to check if customer exists with ID: 3
+2025-12-24 09:53:30.221 [http-nio-8081-exec-6] DEBUG c.c.c.s.impl.CustomerServiceImpl - Checking if customer exists with ID: 3
+2025-12-24 09:53:30.289 [http-nio-8081-exec-6] DEBUG org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        Customer x 
+    WHERE
+        x.id = :id */ select
+            count(*) 
+        from
+            customers c1_0 
+        where
+            c1_0.id=?
+2025-12-24 10:02:07.342 [http-nio-8081-exec-9] INFO  c.c.c.controller.CustomerController - REST request to check if customer exists with ID: 1
+2025-12-24 10:02:07.355 [http-nio-8081-exec-9] DEBUG c.c.c.s.impl.CustomerServiceImpl - Checking if customer exists with ID: 1
+2025-12-24 10:02:07.365 [http-nio-8081-exec-9] DEBUG org.hibernate.SQL - 
+    /* select
+        count(*) 
+    from
+        Customer x 
+    WHERE
+        x.id = :id */ select
+            count(*) 
+        from
+            customers c1_0 
+        where
+            c1_0.id=?
+2025-12-24 10:17:24.050 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-12-24 10:17:24.112 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-12-24 10:17:24.136 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8081"]
+2025-12-24 10:17:25.591 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-12-24 10:17:25.599 [RMI TCP Connection(42)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8081"]
+2025-12-24 10:17:25.685 [RMI TCP Connection(42)-127.0.0.1] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-24 10:17:25.726 [RMI TCP Connection(42)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - CustomerServiceHikariCP - Shutdown initiated...
+2025-12-24 10:17:25.763 [RMI TCP Connection(42)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - CustomerServiceHikariCP - Shutdown completed.
